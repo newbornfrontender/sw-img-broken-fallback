@@ -1,0 +1,17 @@
+{
+  "name": "sw-img-broken-fallback",
+  "version": "1.0.0",
+  "description": "Fallback for broken images (Service Workers)",
+  "repository": "https://github.com/newbornfrontender/sw-img-broken-fallback.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write **/*.{html,js,json,md}",
+    "start": "serve public"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3",
+    "serve": "^10.1.1"
+  }
+}

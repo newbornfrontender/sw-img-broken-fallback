@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SW Img Broken Fallback</title>
+
+    <script type="module">
+      if ('serviceWorker' in navigator)
+        navigator.serviceWorker.register('/sw.js');
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <div><img src="/img/meric-cat.jpg" alt="Meric Cat" /></div>
+      <div><img src="/img/broken-img.jpg" alt="Broken image" /></div>
+    </main>
+  </body>
+</html>
