@@ -9,7 +9,7 @@
   "scripts": {
     "format": "prettier --write **/*.{html,js,json,md}",
     "start": "serve public",
-    "test": "echo \"Site was upload \""
+    "test": "echo \"Site was upload\""
   },
   "devDependencies": {
     "prettier": "^1.15.3",
