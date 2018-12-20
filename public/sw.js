@@ -1,6 +1,10 @@
+const baseHref = 'sw-img-broken-fallback';
+
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open('precache').then((cache) => cache.add('/img/broken.png')),
+    caches
+      .open('precache')
+      .then((cache) => cache.add(`/${baseHref}/img/broken.png`)),
   );
 });
 
@@ -14,10 +18,12 @@ self.addEventListener('fetch', (e) => {
       .then((response) => {
         if (response.ok) return response;
 
-        if (isImage(e.request)) return caches.match('/img/broken.png');
+        if (isImage(e.request))
+          return caches.match(`/${baseHref}/img/broken.png`);
       })
       .catch((err) => {
-        if (isImage(e.request)) return caches.match('/img/broken.png');
+        if (isImage(e.request))
+          return caches.match(`/${baseHref}/img/broken.png`);
       }),
   );
 });

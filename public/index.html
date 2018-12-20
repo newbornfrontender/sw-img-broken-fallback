@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Img Broken Fallback (SW)</title>
-    <base href="/sw-img-broken-fallback/">
+    <base href="/sw-img-broken-fallback/" />
 
     <script type="module">
       if ('serviceWorker' in navigator)
@@ -14,8 +14,15 @@
 
   <body>
     <main>
-      <div><img src="/sw-img-broken-fallback/img/meric-cat.jpg" alt="Meric Cat" /></div>
-      <div><img src="/sw-img-broken-fallback/img/broken-img.jpg" alt="Broken image" /></div>
+      <div>
+        <img src="/sw-img-broken-fallback/img/meric-cat.jpg" alt="Meric Cat" />
+      </div>
+      <div>
+        <img
+          src="/sw-img-broken-fallback/img/broken-img.jpg"
+          alt="Broken image"
+        />
+      </div>
     </main>
   </body>
 </html>
