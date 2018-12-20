@@ -8,14 +8,14 @@
 
     <script type="module">
       if ('serviceWorker' in navigator)
-        navigator.serviceWorker.register('/sw.js');
+        navigator.serviceWorker.register('/sw-img-broken-fallback/sw.js');
     </script>
   </head>
 
   <body>
     <main>
-      <div><img src="/img/meric-cat.jpg" alt="Meric Cat" /></div>
-      <div><img src="/img/broken-img.jpg" alt="Broken image" /></div>
+      <div><img src="/sw-img-broken-fallback/img/meric-cat.jpg" alt="Meric Cat" /></div>
+      <div><img src="/sw-img-broken-fallback/img/broken-img.jpg" alt="Broken image" /></div>
     </main>
   </body>
 </html>
